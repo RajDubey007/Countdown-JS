@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>countdown </title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="Circle">
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Timer Clock</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mt-5">
+                    <div class="mb-3">
+                      <label for="formGroupExampleInput2" class="form-label w-25">Second</label>
+                      <input type="text" class="form-control" id="secondTime" placeholder="Enter a second">
+                    </div>
+                    <div class="mb-3">
+                      <label for="formGroupExampleInput2" class="form-label">Minute</label>
+                      <input type="text" class="form-control" id="minuteTime" placeholder="Enter a minute">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="formGroupExampleInput" class="form-label">Hour</label>
+                      <input type="text" class="form-control" id="hourTime" placeholder="Enter a Hour">
+                    </div>
+                    <div class="mb-3">
+                      <label for="formGroupExampleInput2" class="form-label w-25">Days</label>
+                      <input type="text" class="form-control" id="dayTime" placeholder="Enter a Days">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return Timeset()">Set
+                  Time</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="con">
+          <h1 class="text-center text-danger mt-3 pt-2 text-white fs-2">Timer Clock </h1>
+          <div class="d-flex justify-content-center column-gap-2 mb-4">
+            <div class="">
+              <span id="days" class="box mx-4">00</span>
+              <h3 class="mt-3 text-white" >Days</h3>
+            </div>
+
+            <div class="">
+              <span id="hours" class="box mx-4">00</span>
+              <h3 class="mt-3 text-white">Hours</h3>
+            </div>
+
+            <div class="">
+              <span id="minutes" class="box mx-4">00</span>
+              <h3 class="mt-3 text-white">Minute</h3>
+            </div>
+
+            <div class="">
+              <span id="seconds" class="box mx-4">00</span>
+              <h3 class="mt-3 text-white">Seconds</h3>
+            </div>
+      
+          </div>
+      
+          <div style="margin-top: 6%;">
+            <button class="btn btn-outline-primary  mx-3 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo">Set-Time</button>
+            <button class="btn btn-outline-warning  mx-3 px-4" onclick="return Start()">Start</button>
+            <button class="btn btn-outline-danger mx-3 px-4" onclick="return Stop()">Stop</button>
+            <button class="btn btn-outline-info mx-3 px-4" onclick="return  Reset()">Reset</button>
+          </div>
+      
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(109.6deg, rgb(0, 0, 0) 3.2%, rgb(11, 132, 145) 91.1%);
+}
+.Circle{
+    width: 1000px;
+    height: 450px;
+    border: 14px solid rgb(156, 156, 156);
+    background: radial-gradient(circle at 74.2% 50.9%, rgb(14, 72, 222) 5.2%, rgb(3, 22, 65) 75.3%);
+    color: white;
+    border-radius: 40px;
+    margin-top: 7%;
+    text-align: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    border: 1px solid gray;
+    width: 90px;
+    height: 110px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35%;
+    font-size: 30px;
+    
+}.modal-body {
+    position: relative;
+    background-color: #012f9a;
+    color: white;
+    font-size: 20px;
+}
+.modal-header , .modal-footer{
+    background-color: #012f9a;
+}
